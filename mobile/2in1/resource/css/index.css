@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p,
+input,
+button,
+table,
+tr,
+th,
+td,
+thead,
+tbody,
+pre {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+em,
+cite,
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.noborder {
+  border: none !important;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.iconBox {
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon.png?01) no-repeat;
+  float: left;
+  border-radius: 0;
+  display: block;
+  margin-right: 5px;
+}
+.orderIcon {
+  background-position: 0px -65px;
+}
+.dropIcon {
+  background-position: -51px -17px;
+}
+.searchIcon {
+  background-position: -49px -97px;
+}
+.rightArrowIcon {
+  background-position: 0 -49px;
+}
+#mc-container {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+}
+#mc-container .main {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100%;
+/*  padding-top: 92px;*/
+padding-top: 50px;
+  padding-bottom: 80px;
+  box-shadow: -10px -10px 150px #000000;
+  overflow: hidden;
+  background: #FFF;
+  position: relative;
+  z-index: 1000;
+}
+#mc-container .main header {
+  width: 100%;
+  height: 40px;
+  background: #007dc5;
+/*  top: 50px;
+  position: fixed;
+  left: 0;*/
+  z-index: 9999;
+  box-shadow: 0px 2px 2px #1d6292;
+}
+#mc-container .main header .page-top {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+}
+#mc-container .main header .page-top .page-ttl {
+  height: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFF;
+  text-align: center;
+  display: block;
+}
+#mc-container .main header .page-top .dropIcon {
+  display: inline-block;
+  float: none;
+}
+#mc-container .main header .page-top .searchTrigger {
+  display: none;
+}
+#mc-container .main .tab-wrap {
+  border: #cbcbcb solid 3px;
+  border-left: none;
+  border-right: none;
+  display: block;
+  overflow: hidden;
+}
+#mc-container .main .tab-wrap .tab {
+  display: block;
+  background: #007dc5;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#mc-container .main .tab-wrap .tab a {
+  font-size: 14px;
+  color: #FFF;
+  display: block;
+  line-height: 30px;
+}
+#mc-container .main .tab-wrap .tab.fLeft {
+  width: 28%;
+  float: left;
+  border-right: #006faf solid 1px;
+}
+#mc-container .main .tab-wrap .tab.currentTab,
+#mc-container .main .tab-wrap .tab:hover {
+  background: #4da4d6;
+}
+#mc-container .main .tab-wrap .tab .iconBox {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  margin: 0;
+  overflow: hidden;
+}
+#mc-container .main .fixed-tab-wrap {
+  width: 100%;
+/*  position: fixed;
+  top: 92px;
+  left: 0px;*/
+  z-index: 2000;
+}
+#mc-container .main .item-list-wrap {
+  border: #cbcbcb solid 3px;
+  overflow: hidden;
+}
+#mc-container .main .item-list-wrap .itemList {
+  border-bottom: #cbcbcb solid 3px;
+  display: block;
+  position: relative;
+  padding: 10px 0px 0px 0;
+  overflow: hidden;
+}
+#mc-container .main .item-list-wrap .itemList .itemImgWrap {
+  width: 30%;
+  float: left;
+  position: relative;
+  margin: 0px 5px;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+#mc-container .main .item-list-wrap .itemList .itemImgWrap img {
+  margin: 0 auto;
+  display: block;
+}
+#mc-container .main .item-list-wrap .itemList .itemImgWrap .proPrice {
+  color: #027dc3;
+  font-size: 14px;
+  padding-left: 10px;
+}
+#mc-container .main .item-list-wrap .itemList .itemImgWrap .btn_buy span {
+  display: inline-block;
+  background: #ffb800;
+  color: #fff;
+  line-height: 30px;
+}
+#mc-container .main .item-list-wrap .itemList .itemImgWrap .btn_buy span em {
+  height: 30px;
+  display: block;
+  border-right: 1px solid #fff;
+  float: left;
+  padding: 0 4px;
+}
+#mc-container .main .item-list-wrap .itemList .itemImgWrap .btn_buy span .iconBox {
+  display: inline-block;
+  float: none;
+  float: right;
+  margin-top: 8px;
+}
+#mc-container .main .item-list-wrap .itemList .itemInfoWrap {
+  overflow: hidden;
+  margin: 0px 5px;
+}
+#mc-container .main .item-list-wrap .itemList .itemInfoWrap .item-ttl {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #007dc5;
+}
+#mc-container .main .item-list-wrap .itemList .itemInfoWrap .proSeries {
+  font-size: 14px;
+  color: #007dc5;
+}
+#mc-container .main .item-list-wrap .itemList .itemInfoWrap .proMark {
+  font-size: 14px;
+  color: #007dc5;
+  clear: both;
+}
+#mc-container .main .item-list-wrap .itemList .itemInfoWrap .itemParam {
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+}
+#mc-container .main .item-list-wrap .itemList .itemInfoWrap .itemParam .leftSpan {
+  color: #999;
+}
+#mc-container .main .loadBtn {
+  font-size: 14px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #FFF;
+  background: #4da4d6;
+}
+#mc-container .main .productListWrap {
+  padding-top: 36px;
+}
+#mc-container .main .product-filter {
+  width: 100%;
+/*  padding-top: 76px;
+*/}
+#mc-container .main .product-filter .ttl {
+  background: #027dc3;
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+/*  position: fixed;
+  top: 50px;
+  left: 0;*/
+  z-index: 9999;
+}
+#mc-container .main .product-filter .tab-wrap {
+  border-bottom: 0 none;
+  width: 100%;
+/*  position: fixed;
+  top: 90px;
+  left: 0;*/
+  z-index: 9999;
+}
+#mc-container .main .product-filter .tab-wrap .tab {
+  line-height: 36px;
+  color: #fff;
+  font-size: 14px;
+}
+#mc-container .main .product-filter .tab-wrap .tab.fLeft {
+  width: 50%;
+}
+#mc-container .main .product-filter .filter-list-wrap {
+  border-bottom: none 0;
+  overflow: hidden;
+}
+#mc-container .main .product-filter .filter-list-wrap li {
+  color: #1480c3;
+  line-height: 30px;
+  text-indent: 1em;
+}
+footer.page {
+  max-width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+}

@@ -1,0 +1,14 @@
+#mc_container .banner {position: relative;}
+#mc_container .banner #btn_kv {z-index: 10; width: 958px; height: 40px; margin: 0; top: 212px; left:0px; position: absolute;}
+
+#btn_kv img {border: none; display: block;}
+
+#btn_kv #line1 {width: 958px; height: 40px;}
+#btn_kv #line1 #btn_kv_1,  #btn_kv #line1 #btn_kv_2, #btn_kv #line1 #btn_kv_3{float: left; margin: 0 5px 0 0; padding: 0; cursor: pointer;}
+
+#btn_kv #line2 {width: 958px; height: 66px; position: relative; z-index: 9; display: none;}
+#btn_kv #line2 #intel_products {width: 958px; height: 66px; float: left; position: absolute; z-index: 10; display: none;}
+#btn_kv #line2 #other_products {width: 523px; height: 66px; float: left; margin-left: 422px; z-index: 10; display: none;}
+
+#intel_products ul, #other_products ul {margin: 0; padding: 0;}
+#intel_products ul li, #other_products ul li {float: left; list-style: none; cursor: pointer;}
